@@ -12,9 +12,6 @@ ENV MSSQL_SA_PASSWORD=821hs91ukd_uwq&1*9j
 
 
 ENTRYPOINT ["echo", "Are", "you", "ready?"]
-
-
+CMD ["Kids"]
 # define que iremos expor através da porta 1422, porta essa que o SQLSErVER está escutando por padrão
 EXPOSE 1433
-
-# comando rodado: docker build -t imagem01:latest ./

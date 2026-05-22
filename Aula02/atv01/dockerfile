@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/dotnet/sdk:9.0
+
+ENV HTTP_PROXY="host.docker.internal:3128"
+ENV HTTPS_PROXY="host.docker.internal:3128"
+
+WORKDIR /atv01
+
+COPY ./api .
+ENTRYPOINT ["dotnet", "run"]
+
+EXPOSE 5110
