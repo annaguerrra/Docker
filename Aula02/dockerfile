@@ -1,0 +1,20 @@
+# imagem mssql/server
+FROM mcr.microsoft.com/mssql/server:2022-latest  
+
+# define se eu aceito ou não o contrato de licença
+ENV ACCEPT_EULA=Y
+
+# define o tipo de licença do SQLSERVER que vai rodar no container. Developer é a edição gratuita
+ENV MSSQL_PID=Developer
+
+# definindo a senha do usuário sa (admin) do SQL Server dentro do container
+ENV MSSQL_SA_PASSWORD=821hs91ukd_uwq&1*9j
+
+
+ENTRYPOINT ["echo", "Are", "you", "ready?"]
+
+
+# define que iremos expor através da porta 1422, porta essa que o SQLSErVER está escutando por padrão
+EXPOSE 1433
+
+# comando rodado: docker build -t imagem01:latest ./
