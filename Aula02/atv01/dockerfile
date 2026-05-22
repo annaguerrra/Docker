@@ -5,7 +5,10 @@ ENV HTTPS_PROXY="host.docker.internal:3128"
 
 WORKDIR /atv01
 
-COPY ./api .
+COPY ./api/*.csproj .
+RUN ["dotnet", "restore"]
+COPY ./api ./
+
 ENTRYPOINT ["dotnet", "run"]
 
 EXPOSE 5110
