@@ -1,0 +1,18 @@
+services:
+
+  api:
+    build:
+      # image: mcf.microsoft.com/mssql/server
+      dockerfile: Backend
+      context: ./
+    ports:
+      - 8080:5030
+    environment:
+      - name=value  # ou APP_ENV:
+    
+    volumes:
+      -bancodedados: /mysql/bin/src
+    
+    db:
+      networks:
+        - backend
