@@ -6,7 +6,7 @@ services:
     depends_on:
       - db
     ports:
-      - "8080:5264"
+      - 8080:5264
     environment:
       - DB_HOST=db
       - DB_PORT=1433
@@ -15,6 +15,7 @@ services:
       - DB_PASS=821hs91ukd_uwq&1*9j
     networks:
       - backend
+    
   db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
@@ -23,7 +24,15 @@ services:
       - MSSQL_SA_PASSWORD=821hs91ukd_uwq&1*9j
     networks:
       - backend
+    ports:
+      - 1010:1433
+    volumes:
+      - data:/var/opt/mssql
 networks:
   backend:
+
+volumes:
+  data:
+
 
     
