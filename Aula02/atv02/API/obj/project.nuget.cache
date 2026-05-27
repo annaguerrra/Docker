@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K8Nzk+EpMUg=",
+  "dgSpecHash": "s4cTz4KuHAA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv01\\api\\atv01.csproj",
+  "projectFilePath": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\atv02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\disrct\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.16\\microsoft.aspnetcore.openapi.9.0.16.nupkg.sha512",
     "C:\\Users\\disrct\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
