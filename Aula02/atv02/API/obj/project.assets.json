@@ -80,11 +80,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\atv02.csproj",
+      "projectUniqueName": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\API\\atv02.csproj",
       "projectName": "atv02",
-      "projectPath": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\atv02.csproj",
+      "projectPath": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\API\\atv02.csproj",
       "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\obj\\",
+      "outputPath": "C:\\Users\\disrct\\Desktop\\Docker\\Aula02\\atv02\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config"
