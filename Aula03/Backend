@@ -1,0 +1,14 @@
+# BACKEND
+FROM mcr.microsoft.com/dotnet/sdk:9.0-alpine AS build
+
+WORKDIR /api
+
+COPY ./backend/*.sln .
+
+COPY ./backend/Iduca.Api/*.csproj /Iduca.Api/
+
+RUN dotnet restore
+
+COPY ./Backend /api/
+
+RUN dotnet publish -c Realease -o /app/publish
